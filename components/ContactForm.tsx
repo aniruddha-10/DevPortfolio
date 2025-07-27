@@ -9,6 +9,7 @@ import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Send, CheckCircle, AlertCircle, Loader2 } from "lucide-react"
+import emailjs from '@emailjs/browser'
 
 interface FormData {
   name: string
@@ -40,19 +41,27 @@ export function ContactForm() {
     e.preventDefault()
     setStatus("sending")
 
-    // Simulate API call
-    await new Promise((resolve) => setTimeout(resolve, 2000))
-
-    // Simulate random success/error for demo
-    const success = Math.random() > 0.3
-    setStatus(success ? "success" : "error")
-
-    if (success) {
+    try {
+      const result = await emailjs.send(
+        'service_kpnk3zh',    // Replace with your EmailJS service ID
+        'template_41nde4b',   // Replace with your EmailJS template ID
+        {
+          from_name: formData.name,
+          from_email: formData.email,
+          to_email: "aniruddhakhan747@gmail.com", // <-- add this if your template expects it
+          subject: formData.subject,
+          message: formData.message,
+        },
+        'Pmo1Cw15bt0DNLjmA'     // Replace with your EmailJS public key
+      )
+      setStatus("success")
       setFormData({ name: "", email: "", subject: "", message: "" })
       setCharCount(0)
+    } catch (error) {
+      console.error("EmailJS error:", error);
+      setStatus("error")
     }
 
-    // Reset status after 3 seconds
     setTimeout(() => setStatus("idle"), 3000)
   }
 

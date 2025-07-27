@@ -6,9 +6,9 @@ import { MapPin, Clock, Coffee, Sun, MoonIcon } from "lucide-react"
 
 const timeZones = [
   { city: "Calgary", timezone: "America/Edmonton", flag: "🇨🇦", offset: -7 },
-  { city: "New York", timezone: "America/New_York", flag: "🇺🇸", offset: -5 },
+  { city: "India", timezone: "Asia/Kolkata", flag: "🇮🇳", offset: 5.5 },
   { city: "London", timezone: "Europe/London", flag: "🇬🇧", offset: 0 },
-  { city: "Tokyo", timezone: "Asia/Tokyo", flag: "🇯🇵", offset: 9 },
+  { city: "UAE", timezone: "Asia/Dubai", flag: "🇦🇪", offset: 4 },
 ]
 
 export function ContactMap() {
@@ -73,7 +73,6 @@ export function ContactMap() {
             <div className="w-3 h-3 bg-blue-500 rounded-full animate-pulse"></div>
             <div>
               <div className="font-medium text-gray-900 dark:text-gray-100">🇨🇦 Calgary, Canada</div>
-              <div className="text-sm text-gray-600 dark:text-gray-400">Currently available</div>
             </div>
           </div>
           <div className="text-right">
@@ -87,7 +86,7 @@ export function ContactMap() {
       <div className="space-y-3">
         <h4 className="text-sm font-medium text-gray-700 dark:text-gray-300 flex items-center gap-2">
           <Clock className="h-4 w-4" />
-          Best Times to Reach Me
+          World Clock
         </h4>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
           {timeZones.map((tz, index) => {
