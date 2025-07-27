@@ -1,7 +1,6 @@
 # DevPortfolio
 
-Welcome to **DevPortfolio**!  
-This repository contains the source code for my personal portfolio website.
+Welcome to **DevPortfolio**!  This repository contains the source code for my personal portfolio website.
 
 ## 🚀 Overview
 
@@ -17,9 +16,13 @@ The site is designed for easy navigation and a clean, professional presentation.
 - Responsive design for mobile and desktop
 
 ## 🛠️ Tech Stack
-
-- [Add your main language/framework here, e.g. React, Next.js, HTML/CSS/JS]
-- [Add any other libraries or tools used]
+- **Next.js 14 + React 18 + TypeScript** - Core framework and language
+- **Tailwind CSS + shadcn/ui + Radix UI** - Styling and component system
+- **Framer Motion** - Animations and interactions
+- **React Hook Form + Zod** - Form handling and validation
+- **EmailJS - Email functionality**
+- **Recharts + Embla Carousel** - Data visualization and carousels
+- **Next Themes + Lucide React** - Theming and icons
 
 ## 📦 Installation & Setup
 
@@ -29,23 +32,20 @@ The site is designed for easy navigation and a clean, professional presentation.
    ```
 2. **Install dependencies:**
    ```bash
-   # Example for npm (edit if using yarn or another package manager)
    npm install
    ```
 3. **Run locally:**
    ```bash
-   npm run dev
+   npm start
    ```
    The site will start at [http://localhost:3000](http://localhost:3000) (or another port).
 
+## 🖼️ Website Preview
+
+![Website Preview](/public/website_preview.png)
+
+
 ## 🖥️ Live Demo
 
-[Add link to your live portfolio if hosted, e.g. on Vercel, Netlify, GitHub Pages]
+Here's the live link of the website - https://dev-portfolio-aniruddha.vercel.app/
 
-## 📄 License
-
-This project is open source and available under the [MIT License](LICENSE).
-
----
-
-Feel free to fork, use, or contribute!
