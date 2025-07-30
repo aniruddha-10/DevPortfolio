@@ -2,16 +2,16 @@
 
 import { useState } from "react"
 import { motion, AnimatePresence } from "framer-motion"
-import { Sidebar } from "@/components/Sidebar"
-import { MobileHeader } from "@/components/MobileHeader"
-import { CommandPalette } from "@/components/CommandPalette"
-import { ActivityIndicator } from "@/components/ActivityIndicator"
+import { Sidebar } from "@/components/layout/Sidebar"
+import { MobileHeader } from "@/components/layout/MobileHeader"
+import { CommandPalette } from "@/components/common/CommandPalette"
+import { ActivityIndicator } from "@/components/common/ActivityIndicator"
 import { HomeSection } from "@/components/sections/HomeSection"
 import { AboutSection } from "@/components/sections/AboutSection"
 import { ProjectsSection } from "@/components/sections/ProjectsSection"
 import { TimelineSection } from "@/components/sections/TimelineSection"
 import { ContactSection } from "@/components/sections/ContactSection"
-import { FloatingParticles } from "@/components/FloatingParticles"
+import { FloatingParticles } from "@/components/common/FloatingParticles"
 import { useSidebarAutoCollapse } from "@/hooks/useSidebarAutoCollapse"
 
 export default function Portfolio() {

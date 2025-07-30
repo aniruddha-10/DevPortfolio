@@ -1,7 +1,7 @@
 "use client"
 
 import { timeline } from "@/lib/data"
-import { InteractiveTimeline } from "@/components/InteractiveTimeline"
+import { InteractiveTimeline } from "@/components/features/timeline/InteractiveTimeline"
 
 export function TimelineSection() {
   return (

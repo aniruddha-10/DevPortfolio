@@ -4,7 +4,7 @@ import { useState, useEffect } from "react"
 import { motion } from "framer-motion"
 import { Button } from "@/components/ui/button"
 import { Github, Linkedin, Mail } from "lucide-react"
-import { ParticleBackground } from "@/components/ParticleBackground"
+import { ParticleBackground } from "@/components/common/ParticleBackground"
 
 interface HomeSectionProps {
   setActiveSection: (section: string) => void

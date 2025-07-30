@@ -117,7 +117,7 @@ export const projects = [
 export const timeline = [
   {
     year: "Jan,2025 - present",
-    role: "Juniot Product/Software Development Intern",
+    role: "Junior Product/Software Development Intern",
     company: "Modular Solutions",
     location: "Calgary, AB",
     description:

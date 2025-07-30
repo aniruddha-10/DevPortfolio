@@ -1,9 +1,9 @@
 "use client"
 
-import { ContactMap } from "@/components/ContactMap"
-import { ContactForm } from "@/components/ContactForm"
-import { SocialLinks } from "@/components/SocialLinks"
-import { ResponseTimeIndicator } from "@/components/ResponseTimeIndicator"
+import { ContactMap } from "@/components/features/contact/ContactMap"
+import { ContactForm } from "@/components/features/contact/ContactForm"
+import { SocialLinks } from "@/components/features/social/SocialLinks"
+import { ResponseTimeIndicator } from "@/components/features/contact/ResponseTimeIndicator"
 
 export function ContactSection() {
   return (

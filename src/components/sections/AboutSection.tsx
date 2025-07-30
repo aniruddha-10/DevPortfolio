@@ -2,8 +2,8 @@
 
 import { motion } from "framer-motion"
 import { techStack } from "@/lib/data"
-import { SkillsRadar } from "@/components/SkillsRadar"
-import { LiveStats } from "@/components/LiveStats"
+import { SkillsRadar } from "@/components/features/skills/SkillsRadar"
+import { LiveStats } from "@/components/common/LiveStats"
 
 export function AboutSection() {
   return (
