@@ -25,18 +25,7 @@ const initialStats: Stat[] = [
 export function LiveStats() {
   const [stats, setStats] = useState(initialStats)
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setStats((prevStats) =>
-        prevStats.map((stat) => ({
-          ...stat,
-          value: stat.value + stat.increment * (Math.random() * 2), // Random increment
-        })),
-      )
-    }, 2000)
-
-    return () => clearInterval(interval)
-  }, [])
+  // Removed the useEffect that was incrementing values every 2 seconds
 
   const formatValue = (value: number, unit: string) => {
     if (value >= 1000000) {
